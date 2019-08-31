@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexLib", "RegexLib\RegexLib.csproj", "{372C250B-950F-4354-A347-40FA59F063AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.csproj", "{ED873830-49AF-4187-BBD5-AA8BB924A3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionLib", "CollectionLib\CollectionLib.csproj", "{61AE4535-E23A-4791-A23C-B20E95042211}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372C250B-950F-4354-A347-40FA59F063AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372C250B-950F-4354-A347-40FA59F063AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372C250B-950F-4354-A347-40FA59F063AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372C250B-950F-4354-A347-40FA59F063AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED873830-49AF-4187-BBD5-AA8BB924A3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED873830-49AF-4187-BBD5-AA8BB924A3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED873830-49AF-4187-BBD5-AA8BB924A3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED873830-49AF-4187-BBD5-AA8BB924A3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61AE4535-E23A-4791-A23C-B20E95042211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AE4535-E23A-4791-A23C-B20E95042211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AE4535-E23A-4791-A23C-B20E95042211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AE4535-E23A-4791-A23C-B20E95042211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DC6AE1E-108B-4AB4-8F18-F7F77607411B}
+	EndGlobalSection
+EndGlobal
