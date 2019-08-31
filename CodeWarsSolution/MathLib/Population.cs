@@ -18,7 +18,7 @@ namespace MathLib
         /// <param name="aug">inhabitants coming or leaving each year</param>
         /// <param name="p">population to surpass</param>
         /// <returns></returns>
-        public static int NbYear(int p0, double percent, int aug, int p)
+        public int NbYear(int p0, double percent, int aug, int p)
         {
             int result = 0;
             int counter = 0;
@@ -30,6 +30,16 @@ namespace MathLib
             } while (result < p);
 
             return counter;
+        }
+
+        /// <summary>
+        /// It will calculate 2 last values in integer arrays
+        /// </summary>
+        /// <param name="peopleListInOut">List with arays</param>
+        /// <returns></returns>
+        public int Number(List<int[]> peopleListInOut)
+        {
+            return peopleListInOut.Sum(a => a[0] - a[1]);
         }
     }
 }

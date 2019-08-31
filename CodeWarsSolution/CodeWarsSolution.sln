@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionLib", "CollectionLib\CollectionLib.csproj", "{61AE4535-E23A-4791-A23C-B20E95042211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringLib", "StringLib\StringLib.csproj", "{A801102D-4345-49FD-9121-7222D06FCB27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodewarsConsole", "CodewarsConsole\CodewarsConsole.csproj", "{B33705C8-E614-4966-9465-EC9092B7BCF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{61AE4535-E23A-4791-A23C-B20E95042211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61AE4535-E23A-4791-A23C-B20E95042211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61AE4535-E23A-4791-A23C-B20E95042211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A801102D-4345-49FD-9121-7222D06FCB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A801102D-4345-49FD-9121-7222D06FCB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A801102D-4345-49FD-9121-7222D06FCB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A801102D-4345-49FD-9121-7222D06FCB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33705C8-E614-4966-9465-EC9092B7BCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33705C8-E614-4966-9465-EC9092B7BCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33705C8-E614-4966-9465-EC9092B7BCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33705C8-E614-4966-9465-EC9092B7BCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

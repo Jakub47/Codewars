@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{372C250B-950F-4354-A347-40FA59F063AD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RegexLib</RootNamespace>
-    <AssemblyName>RegexLib</AssemblyName>
+    <ProjectGuid>{B33705C8-E614-4966-9465-EC9092B7BCF1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CodewarsConsole</RootNamespace>
+    <AssemblyName>CodewarsConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,8 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RegexMethod.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CollectionLib\CollectionLib.csproj">
+      <Project>{61ae4535-e23a-4791-a23c-b20e95042211}</Project>
+      <Name>CollectionLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MathLib\MathLib.csproj">
+      <Project>{ed873830-49af-4187-bbd5-aa8bb924a3c2}</Project>
+      <Name>MathLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegexLib\RegexLib.csproj">
+      <Project>{372c250b-950f-4354-a347-40fa59f063ad}</Project>
+      <Name>RegexLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringLib\StringLib.csproj">
+      <Project>{a801102d-4345-49fd-9121-7222d06fcb27}</Project>
+      <Name>StringLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
