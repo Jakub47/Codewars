@@ -1,5 +1,4 @@
-﻿using MathLib;
-using StringLib;
+﻿using StringLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +11,8 @@ namespace CodewarsConsole
     {
         static void Main(string[] args)
         {
-            EvenNumbers stringMethod = new EvenNumbers();
-            Console.WriteLine(stringMethod.NthEven(5));
+            StringMethod stringMethod = new StringMethod();
+            Console.WriteLine(stringMethod.repeatStr(5, "Hello"));
             Console.ReadKey();
         }
     }

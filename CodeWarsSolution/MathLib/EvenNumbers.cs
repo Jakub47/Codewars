@@ -8,13 +8,14 @@ namespace MathLib
 {
     public class EvenNumbers
     {
+        /// <summary>
+        /// Return the even number of given n Ghi
+        /// </summary>
+        /// <param name="n">index of even number</param>
+        /// <returns></returns>
         public  int NthEven(int n)
         {
-            int currentNumber = 0;
-            for(int i = 0;i<n;i++)
-            {
-
-            }
+            return 2 * (n - 1);
         }
     }
 }
