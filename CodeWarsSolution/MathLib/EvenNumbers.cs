@@ -9,7 +9,7 @@ namespace MathLib
     public class EvenNumbers
     {
         /// <summary>
-        /// Return the even number of given n
+        /// Return the even number of given n Ghi
         /// </summary>
         /// <param name="n">index of even number</param>
         /// <returns></returns>
