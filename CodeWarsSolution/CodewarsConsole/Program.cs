@@ -9,6 +9,10 @@ namespace CodewarsConsole
 {
     class Program
     {
+        /// <summary>
+        /// Main Entry point
+        /// </summary>
+        /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
             StringMethod stringMethod = new StringMethod();
