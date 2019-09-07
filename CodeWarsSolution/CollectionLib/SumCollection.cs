@@ -43,5 +43,10 @@ namespace CollectionLib
 
            // return sum;
         }
+
+        public  int MaxGap(int[] numbers)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
