@@ -1,4 +1,5 @@
-﻿using StringLib;
+﻿using CollectionLib;
+using StringLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            StringMethod stringMethod = new StringMethod();
-            Console.WriteLine(stringMethod.repeatStr(5, "Hello"));
+            SumCollection sumCol = new SumCollection();
+            Console.WriteLine(sumCol.MaxGap(new int[] { 13, 10, 5, 2, 9 }));
             Console.ReadKey();
         }
     }
