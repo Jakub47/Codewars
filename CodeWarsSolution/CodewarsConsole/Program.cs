@@ -16,8 +16,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            SumCollection sumCol = new SumCollection();
-            Console.WriteLine(sumCol.MaxGap(new int[] { 13, 10, 5, 2, 9 }));
+            MultiplyCollection sumCol = new MultiplyCollection();
+            Console.WriteLine(sumCol.Grow(new int[] { 1, 2, 3, 4 }));
             Console.ReadKey();
         }
     }
