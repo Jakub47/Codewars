@@ -16,8 +16,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            MultiplyCollection sumCol = new MultiplyCollection();
-            Console.WriteLine(sumCol.Grow(new int[] { 1, 2, 3, 4 }));
+            StringMethod s = new StringMethod();
+            Console.WriteLine(s.RevRot("", 0));
             Console.ReadKey();
         }
     }

@@ -35,5 +35,73 @@ namespace StringLib
         {
             return s.Split(' ').Min(a => a.Length);
         }
+
+        /// <summary>
+        /// Cuts the string into chunks of size sz (ignores the last chunk is its size is less than sz)
+        /// If a chunk represents an integer such as the sum of the cubes of its digits is divisible by 2, reverse that chunk; otherwise rotate it to the left by one position. Put together these modified chunks and return the result as a string.
+        /// </summary>
+        /// <param name="strng">string to cut</param>
+        /// <param name="sz">amount to which string will be chunked</param>
+        /// <returns>chunked string correct with description</returns>
+        public string RevRot(string strng, int sz)
+        {
+            if (strng.Length <= sz)
+                return string.Empty;
+
+            List<string> listOfChunks = new List<string>();
+            List<string> chunksToReturn = new List<string>();
+            StringBuilder sB = new StringBuilder();
+            int repeatSz = 0;
+            int letterCounter = 0;
+
+            while (true)
+            {
+                if (letterCounter == sz)
+                {
+                    listOfChunks.Add(sB.ToString());
+                    sB = new StringBuilder();
+                    letterCounter = 0;
+                }
+
+                sB.Append(strng[repeatSz]);
+                repeatSz++;
+                letterCounter++;
+
+                if (repeatSz >= strng.Length)
+                {
+                    if (letterCounter == sz)
+                        listOfChunks.Add(sB.ToString());
+                    break;
+                }
+            }
+
+            listOfChunks.ForEach(a =>
+            {
+                //If a chunk represents an integer such as the sum of the cubes of its digits is divisible by 2, reverse that chunk; 
+                if (CubeOfAll(a) % 2 == 0)
+                    chunksToReturn.Add(new string(a.Reverse().ToArray()));
+                else
+                    chunksToReturn.Add(ShiftString(a));
+            });
+            
+
+            return String.Join("",chunksToReturn.ToArray());
+        }
+
+        private  int CubeOfAll(string stringWithIntegers)
+        {
+            int number = 0;
+            stringWithIntegers.ToList().ForEach(a =>
+            {
+                int numberOfChar = Convert.ToInt32(a.ToString());
+                number += numberOfChar * numberOfChar * numberOfChar;
+            });
+            return number;
+        }
+        private  string ShiftString(string t)
+        {
+            //ABC == BC + remaing A
+            return t.Substring(1, t.Length - 1) + t.Substring(0, 1);
+        }
     }
 }
