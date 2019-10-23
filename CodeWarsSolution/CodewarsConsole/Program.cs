@@ -17,7 +17,7 @@ namespace CodewarsConsole
         static void Main(string[] args)
         {
             StringMethod s = new StringMethod();
-            Console.WriteLine(s.RevRot("", 0));
+            Console.WriteLine(s.FirstNonRepeatingLetter("G„weqwSG"));
             Console.ReadKey();
         }
     }

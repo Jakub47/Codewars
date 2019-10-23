@@ -88,6 +88,54 @@ namespace StringLib
             return String.Join("",chunksToReturn.ToArray());
         }
 
+        /// <summary>
+        /// First non-repeating character
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public string FirstNonRepeatingLetter(string s)
+        {
+            if (s.Length == 1) return s;
+            string toReturn = "";
+            var sList = s.ToList();
+            //var zz = sList.Where(a => sList.Sum((b) => b) == 1).First();
+            foreach (var item in sList)
+            {
+                    if (sList.Where(b => string.Equals(item.ToString(), b.ToString(), StringComparison.CurrentCultureIgnoreCase)).Count() == 1)
+                    {
+                        toReturn = item.ToString();
+                        break;
+                    }   
+            }
+            return toReturn;
+
+            //foreach (var item in s.ToList())
+            //{
+            //    if (s.ToList().Any(a => a != item))
+            //        return item.ToString();
+            //}
+            //return "";
+            //s.ToList().Any(a =>
+            //{
+            //    if (s.ToList().Any(b => a != b))
+            //        return a;
+            //});
+            //char letterToReturn = ' ';
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    if (letterToReturn != s[i] && i != s.Length - 1)
+            //    {
+            //        letterToReturn = s[i];
+            //        continue;
+            //    }
+
+            //    if()
+            //    letterToReturn = s[i];
+            //}
+        }
+
+
+
         private  int CubeOfAll(string stringWithIntegers)
         {
             int number = 0;
