@@ -16,8 +16,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            StringMethod s = new StringMethod();
-            Console.WriteLine(s.FirstNonRepeatingLetter("G„weqwSG"));
+            SumCollection s = new SumCollection();
+            Console.WriteLine(s.MaxGap(new int[] { 13, 10, 2, 9, 5 }));
             Console.ReadKey();
         }
     }

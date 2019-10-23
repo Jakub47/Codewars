@@ -46,17 +46,18 @@ namespace CollectionLib
 
         public  int MaxGap(int[] numbers)
         {
-            List<int> results = new List<int>();
+            var sorted = numbers.OrderBy(i => i);
+            return sorted.Zip(sorted.Skip(1), (a, b) => b - a).Max();
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                for (int j = 1; j < numbers.Length; j++)
-                {
-                    results.Add(numbers[i] - numbers[j]);
-                }
-            }
+            //numbers = numbers.OrderByDescending(a => a).ToArray();
+            //var substractions = new List<int>();
 
-            return results.Max();
+            //for (int i = 0; i < numbers.Length - 1; i++)
+            //{
+            //    substractions.Add(numbers[i] - numbers[i + 1]);
+            //}
+
+            //return substractions.Max();
         }
     }
 }
