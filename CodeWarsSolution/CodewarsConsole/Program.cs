@@ -1,4 +1,5 @@
 ﻿using CollectionLib;
+using MathLib;
 using StringLib;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            SumCollection s = new SumCollection();
-            Console.WriteLine(s.MaxGap(new int[] { 13, 10, 2, 9, 5 }));
-            Console.ReadKey();
+            MathOperation pM = new MathOperation();
+            Console.WriteLine(pM.rowSumOddNumbers(2));
         }
     }
 }

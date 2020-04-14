@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StringLen.cs" />
     <Compile Include="StringMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

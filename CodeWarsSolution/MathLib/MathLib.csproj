@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MathOperation.cs" />
     <Compile Include="Population.cs" />
+    <Compile Include="PrimaryMath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqrtAdd.cs" />
   </ItemGroup>
