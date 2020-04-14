@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CollectionLib
 {
+    //Kata.ArrayMadness(new int[] {4, 5, 6}, new int[] {1, 2, 3}) => true //
+    //because 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+
     public class SumCollection
     {
         /// <summary>
@@ -15,6 +18,7 @@ namespace CollectionLib
         /// <returns>Sum</returns>
         public int sumTwoSmallestNumbers(int[] numbers)
         {
+            numbers.Where(a => a > 0).Sum();
             //z 2012 wynika że first wykonywany O(nlog(n)) podczas gdy min/max w O(n)
             //pozatym w 2012 osoba wykonała pomiar z którego wynika że w podanym czasie zostaną wykonane funkcje
             //max_min => 70ms
@@ -26,6 +30,11 @@ namespace CollectionLib
             int firstNumber = numberList.Min(); numberList.Remove(firstNumber);
             int secondNumber = numberList.Min();
             return firstNumber + secondNumber;
+        }
+
+        public bool Check(object[] a, object x)
+        {
+            return a.Contains(x);
         }
 
         public Double SumArray(Double[] array)
