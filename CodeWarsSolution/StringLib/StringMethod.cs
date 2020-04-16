@@ -8,6 +8,45 @@ namespace StringLib
 {
     public class StringMethod
     {
+
+        /// <summary>
+        /// Move the first letter of each word to the end of it, then add "ay" to the end of the word. 
+        /// Leave punctuation marks untouched. ie Pig become igPye
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public string PigIt(string str)
+        {
+            return string.Join(" ", str.Split(' ').Select(w => w.Substring(1) + w[0] + "ay"));
+
+
+            //                  1
+            //return Regex.Replace(str, @"((\S)(\S+))", "$3$2ay");
+
+            //                 2
+            //StringBuilder sB = new StringBuilder();
+            //var words = str.Split(' ').ToList();
+            //words.ForEach(a => sB.Append( a + a.Remove(0, 1) + "ay"));
+
+
+            //StringBuilder sB1 = new StringBuilder();
+            //bool isLast = false;
+
+            //foreach (var word in words)
+            //{
+            //    if (words.Last() == word)
+            //        isLast = true;
+
+            //    string lastEle = isLast == true ? "" : " ";
+            //    var withoutFirstLetter = word.Substring(1, word.Length - 1);
+            //    var firstLetter = word.First();
+            //    string final = withoutFirstLetter + firstLetter + "ay" + lastEle;
+            //    sB.Append(final);
+            //}
+
+            //return sB.ToString();
+        }
+
         /// <summary>
         /// Repeat string s given times (n)
         /// </summary>
