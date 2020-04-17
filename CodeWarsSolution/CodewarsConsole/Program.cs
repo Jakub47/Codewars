@@ -17,8 +17,8 @@ namespace CodewarsConsole
         /// <param name="args">argumnents</param>
         static void Main(string[] args)
         {
-            StringMethod pM = new StringMethod();
-            Console.WriteLine(pM.PigIt("Pig latin is cool"));
+            SortCollection pM = new SortCollection();
+            Console.WriteLine(pM.MyLanguages(new Dictionary<string, int> { { "Java", 10 }, { "Ruby", 80 }, { "Python", 65 } }));
         }
     }
 }

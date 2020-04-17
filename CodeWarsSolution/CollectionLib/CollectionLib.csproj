@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MultiplyCollection.cs" />
+    <Compile Include="SortCollection.cs" />
     <Compile Include="SumCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
